@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="4.0" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd">
+    <servlet>
+        <servlet-name>CircuitosServlet</servlet-name>
+        <servlet-class>es.fmsb.kers.controller.CircuitosServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>CochesServlet</servlet-name>
+        <servlet-class>es.fmsb.kers.controller.CochesServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CircuitosServlet</servlet-name>
+        <url-pattern>/CircuitosServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>CochesServlet</servlet-name>
+        <url-pattern>/CochesServlet</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
